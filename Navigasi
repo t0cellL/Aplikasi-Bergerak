@@ -1,3 +1,6 @@
+
+//Main.dart//
+
 import 'package:flutter/material.dart';
 import 'home.dart';
 
@@ -26,6 +29,26 @@ class MyApp extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+//Home.dart//
+
+import 'package:flutter/material.dart';
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Home 2')),
+      body: ElevatedButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          child: const Text('Kembali')),
     );
   }
 }
